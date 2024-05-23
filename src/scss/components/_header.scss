@@ -1,0 +1,24 @@
+.header{
+    position: fixed;
+    padding: 34px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--light-color);
+    &__container{
+        max-width: 1760px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;        
+    }
+    &__title{
+        margin: 0;
+        margin-right: 20px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 25px;
+        letter-spacing: 0.1em;
+        color: var(--dark);
+        text-decoration: underline 2px var(--acent);
+    }
+}

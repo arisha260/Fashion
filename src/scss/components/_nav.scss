@@ -1,0 +1,14 @@
+.nav{
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &__link{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: var(--dark);
+    }
+}
