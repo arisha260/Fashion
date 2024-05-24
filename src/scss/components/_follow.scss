@@ -1,0 +1,41 @@
+.follow{
+  padding-bottom: 100px;
+  &::-webkit-scrollbar{
+    width: 12px;
+    height: 10px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: linear-gradient(90deg, var(--clr-accent), #fff);
+    transition: .3s;
+    border: 1px solid #c9a96e;
+  }
+  &::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: 0 0;
+    transition: .3s;
+  }
+  &__container{
+    max-width: 98vw;
+  }
+  &__title{
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: var(--dark);
+  }
+  &__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 21px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+}
