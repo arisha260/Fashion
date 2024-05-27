@@ -7,6 +7,10 @@
     background-repeat: no-repeat;
     width: 100%;
     height: calc(100vh - 100px);
+    // &.active-hero{
+    //   filter: blur(3px);
+    //   z-index: -1;
+    // }
     &__container{
       display: flex;
       height: 100%;

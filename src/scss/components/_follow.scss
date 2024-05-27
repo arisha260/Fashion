@@ -38,4 +38,7 @@
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
   }
+  &__item{
+    flex: none;
+  }
 }

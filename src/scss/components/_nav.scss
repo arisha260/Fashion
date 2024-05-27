@@ -1,8 +1,27 @@
 .nav{
+
+  @include mobile{
+    position: absolute;
+    top: 0;
+    right: -500px;
+    padding: 100px;
+    background-color: var(--light-color);
+    height: 100vh;
+    overflow-x: hidden;
+    transition: right 0.5s ease;
+    z-index: 10000;
+    &.active-nav{
+      right: 0;
+    }
+  }
     &__list{
         display: flex;
         align-items: center;
         gap: 30px;
+        @include mobile{
+          flex-direction: column;
+          gap: 60px;
+        }
     }
     &__link{
         font-family: var(--font-family);
@@ -10,5 +29,8 @@
         font-style: normal;
         font-size: 14px;
         color: var(--dark);
-    }
+        @include mobile{
+          font-size: 25px;
+        }
+      }
 }
