@@ -18,6 +18,9 @@
   }
   &__container{
     max-width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__title{
     margin: 0;

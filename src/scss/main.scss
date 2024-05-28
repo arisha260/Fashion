@@ -16,3 +16,26 @@
   overflow: hidden;
 }
 
+.btn{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 74px;
+  border: 1px solid #e5e5e5;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--dark);
+  transition: all 0.5s ease;
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    background-color: var(--acent);
+    color: var(--light-color);
+  }
+  &:active{
+    background-color: #ce962d;
+    color: var(--light-color);
+  }
+}
