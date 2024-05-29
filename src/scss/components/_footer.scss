@@ -24,8 +24,10 @@
     font-size: 14px;
     color: var(--gray);
     transition: color 0.5s ease;
-    &:hover{
-      color: var(--acent);
+    @media (hover: hover){
+      &:hover{
+        color: var(--acent);
+      }
     }
     &::after{
       content: '';
@@ -55,11 +57,15 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    &:hover{
-      background: var(--acent);
+    @media (hover: hover){
+      &:hover{
+        background: var(--acent);
+      }
     }
-    &:hover > .footer-social__link{
-      color: var(--light-color);
+    @media (hover: hover){
+      &:hover > .footer-social__link{
+        color: var(--light-color);
+      }
     }
   }
   &-social__link{

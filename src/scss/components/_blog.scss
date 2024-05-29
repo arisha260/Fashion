@@ -355,8 +355,10 @@
     justify-content: space-between;
     border-bottom: 1px solid #e5e5e5;
     transition: border-color 0.5s ease;
-    &:hover{
-      border-color: var(--acent);
+    @media (hover: hover){
+      &:hover{
+        border-color: var(--acent);
+      }
     }
   }
   &__descr{
@@ -392,11 +394,16 @@
     grid-column: 2 span;
     background: #f8f9fa;
     transition: scale 0.5s ease;
-    &:hover{
-      scale: 1.1;
+    @media (hover: hover){
+      &:hover{
+        scale: 1.1;
+        z-index: -1;
+      }
     }
-    &:hover svg{
-      fill: var(--acent);
+    @media (hover: hover){
+      &:hover svg{
+        fill: var(--acent);
+      }
     }
   }
   &__descr{
@@ -428,23 +435,11 @@
     color: var(--gray);
     background: #f8f9fa;
     transition: color 0.5s ease;
-    &:hover{
-      color: var(--acent);
+    @media (hover: hover){
+      &:hover{
+        color: var(--acent);
+      }
     }
   }
 }
-
-// .filter-btn{
-//   position: relative;
-//   @include tablet{
-//     .filter-btn{
-//       .filter-btn::after{
-//         content: ﹀;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//       }
-//     }
-//   }
-// }
 

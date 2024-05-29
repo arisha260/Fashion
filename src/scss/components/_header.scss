@@ -5,6 +5,7 @@
     left: 0;
     right: 0;
     background-color: var(--light-color);
+    z-index: 1000000;
     &__container{
         max-width: 1760px;
         display: flex;

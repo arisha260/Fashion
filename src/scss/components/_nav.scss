@@ -39,8 +39,10 @@
       @include mobile{
         font-size: 25px;
       }
-      &:hover{
-        color: var(--acent);
+      @media (hover: hover){
+        &:hover{
+          color: var(--acent);
+        }
       }
       }
 }

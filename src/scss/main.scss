@@ -30,9 +30,11 @@
   &:focus{
     outline: none;
   }
-  &:hover{
-    background-color: var(--acent);
-    color: var(--light-color);
+  @media (hover: hover){
+    &:hover{
+      background-color: var(--acent);
+      color: var(--light-color);
+    }
   }
   &:active{
     background-color: #ce962d;
