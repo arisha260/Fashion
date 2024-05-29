@@ -185,19 +185,22 @@
       white-space: nowrap;
       position: relative;
     }
-    .filters-menu{
-      opacity: 0;
-      visibility: hidden;
-      height: 0;
-      transform: translateY(-20px);
-      transition: all 0.2s ease;
+    @include tablet{
+      .filters-menu{
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        transform: translateY(-20px);
+        transition: all 0.2s ease;
+      }
+      .active-menu{
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        transform: translateY(0);
+      }
     }
-    .active-menu{
-      opacity: 1;
-      visibility: visible;
-      height: 100%;
-      transform: translateY(0);
-    }
+
     @include tablet{
       flex-direction: row;
     }
