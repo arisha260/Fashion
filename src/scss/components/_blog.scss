@@ -24,6 +24,7 @@
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: all 0.5s ease;
+    position: relative;
     &:nth-child(7){
       grid-column: 12 span;
       align-items: flex-start;
@@ -69,13 +70,17 @@
     color: var(--acent);
   }
   &-card__title{
-    margin: 0;
     margin-bottom: 12px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
     color: var(--dark);
+    &::after{
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
   }
   &-card__info{
     margin-top: auto;
@@ -407,6 +412,7 @@
       &:hover svg{
         fill: var(--acent);
       }
+
     }
   }
   &__descr{
