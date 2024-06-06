@@ -129,6 +129,7 @@
     font-size: 16px;
     line-height: 100%;
     color: var(--dark);
+    position: relative;
     &:not(:last-child){
       margin-right: 30px;
     }
@@ -140,6 +141,16 @@
         margin-left: 5px;
       }
     }
+    @media (hover: hover){
+      &:hover{
+        color: var(--acent);
+      }
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      inset: -7px;
+    }
   }
   &__item-arroy{
     font-family: var(--third-family);
@@ -147,12 +158,14 @@
     font-size: 14px;
     line-height: 114%;
     color: #a2a2a2;
+    transition: color 0.5s ease;
     &:first-child{
       margin-right: 30px;
     }
     &:last-child{
       margin-left: 10px;
     }
+
   }
 }
 
